@@ -737,7 +737,6 @@ text-align: center;
 }
 
 
-
 @media screen and (min-width: 768px){
  .nav__menu{
     width: 50%;
@@ -761,11 +760,9 @@ text-align: center;
 }
 
 .slide-content{
-    margin: 0 10px;
+    margin: 0 40px;
 }
-.swiper-navBtn{
-    display: none;
-}
+
 
 }
 /* For large devices */

@@ -80,7 +80,7 @@ const sr = ScrollReveal({
 document.addEventListener('DOMContentLoaded', () => {
    
     var swiper = new Swiper(".slide-content", {
-         slidesPerView: 2,
+        slidesPerView: 2,
         spaceBetween: 25,
         loop: true,
         centerSlide: 'true',
@@ -111,3 +111,4 @@ sr.reveal(`.home__img , .new__data , .care__img , .contact__content , .footer`)
 sr.reveal(`.home__data , .care__list ,.contact__img`  , {delay: 500})  
 sr.reveal(`.new__card` , {delay: 500 , interval:100})  
 sr.reveal(`.shop__card` , { interval:100})  
+sr.reveal('.about_us')
