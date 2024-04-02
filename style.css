@@ -430,6 +430,111 @@ n.new__title{
     font-size: 1.5rem;
     color: var(--first-color);
 }
+/*=============== ABOUT US ===============*/
+
+.about_us{
+    padding-top: 2rem;
+    row-gap: 2rem;
+}
+.info-container{
+    
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: rgb(85, 92, 92);*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+   /* background-color: blueviolet;*/
+    padding: 40px 0;
+}
+.slide-content{
+    padding: 10px 20px;
+    margin: 0 40px;
+    overflow: hidden;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #242425;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-content, .card-content{
+    flex: 1;
+    justify-content: center; 
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--first-color-alt);
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--first-color-alt);
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #242425;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: var(--black-color);
+    padding: 4px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--first-color);
+}
+
+.description{
+    text-align: center;
+}
+
+.swiper-navBtn{
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+
+.swiper-navBtn:hover{
+    color: var(--first-color-alt);
+}
 
 /*=============== CONTACT ===============*/
 .contact__container{
@@ -653,6 +758,13 @@ text-align: center;
 .footer__container{
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
+}
+
+.slide-content{
+    margin: 0 10px;
+}
+.swiper-navBtn{
+    display: none;
 }
 
 }
